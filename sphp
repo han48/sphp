@@ -10,3 +10,4 @@ echo "Switch to $ver"
 sudo update-alternatives --set php "/usr/bin/$ver"
 sudo a2enmod "$ver"
 sudo systemctl restart apache2
+php -v
