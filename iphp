@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Start install php version"
+ver="php$1"
+sudo apt update
+sudo apt install $ver
+...
+sudo apt install php-cli unzip
+sudo apt-get install $ver-xml
+sudo apt-get install $ver-curl
+sudo apt-get install $ver-mbstring
+sudo apt-get install $ver-mysql
