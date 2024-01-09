@@ -20,3 +20,12 @@ alias iphp="path/to/iphp"
 ```terminal
 source ~/.bashrc
 ```
+
+## Aditional
+
+# Ubuntu
+
+```terminal
+sudo apt update && apt install -y software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+```
