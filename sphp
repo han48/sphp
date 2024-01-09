@@ -1,13 +1,14 @@
 #!/bin/bash
-echo "Start switch php version"
-echo "Disable all module php"
+echo -e "\033[32mStart switch php version\033[m"
+echo -e "\033[32mDisable all module php\033[m"
 for dir in /usr/bin/php[0-9]*; do
     ver=$(basename ${dir})
     sudo a2dismod "$ver"
 done
 ver="php$1"
-echo "Switch to $ver"
+echo -e "\033[32mSwitch to $ver\033[m"
 sudo update-alternatives --set php "/usr/bin/$ver"
 sudo a2enmod "$ver"
 sudo systemctl restart apache2
 php -v
+echo -e "\033[32mEnd switch php version\033[m"
