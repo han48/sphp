@@ -6,6 +6,7 @@ for ARG in "$@"; do
     sudo apt-get -y install $ver
 
     sudo apt-get -y install php-cli unzip
+    sudo apt-get -y install $ver-gd
     sudo apt-get -y install $ver-zip
     sudo apt-get -y install $ver-xml
     sudo apt-get -y install $ver-curl
