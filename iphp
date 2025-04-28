@@ -12,5 +12,6 @@ for ARG in "$@"; do
     sudo apt-get -y install $ver-curl
     sudo apt-get -y install $ver-mbstring
     sudo apt-get -y install $ver-mysql
+    sudo apt-get -y install $ver-sqlite3
     echo -e "\033[32mEnd install php $ARG\033[m"
 done
